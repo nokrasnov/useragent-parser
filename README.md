@@ -7,7 +7,7 @@ JavaScript-based user-agent string parser
 ### Using node.js
 
 ```js
-npm install useragent-parser
+npm install useragent-parser-js
 ```
 
 ```js
