@@ -1,6 +1,6 @@
 {
   "name": "useragent-parser",
-  "main": "dist/useragent-parser.js",
+  "main": "dist/useragent-parser.min.js",
   "version": "1.0.1",
   "homepage": "https://github.com/nokrasnov/useragent-parser",
   "authors": [
