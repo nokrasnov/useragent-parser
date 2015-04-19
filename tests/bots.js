@@ -2,7 +2,7 @@
  * @author Luiz Freneda <lfreneda@gmail.com>
  */
 
-var ua = require('../lib/express-useragent');
+var ua = require('../src/useragent-parser');
 
 exports['Baiduspider Bot'] = function (test) {
 

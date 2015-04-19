@@ -14,22 +14,22 @@
 
 
 
-var Ua = require('./../lib/express-useragent');
+var Ua = require('./../src/useragent-parser');
 
 var ua1 = Ua.parse('Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.16) Gecko/20111108 Iceweasel/3.5.16 (like Firefox/3.5.16)');
-console.log('Ua 1: ' + ua1.Browser);
+console.log('Ua 1: ' + ua1.browser);
 
 
 var ua2 = Ua.parse('Mozilla/5.0 (iPad; CPU OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3');
-console.log('Ua 2: ' + ua2.Browser);
+console.log('Ua 2: ' + ua2.browser);
 
 
 var ua3 = Ua.parse('Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.16) Gecko/20111108 Iceweasel/3.5.16 (like Firefox/3.5.16)');
-console.log('Ua 3: ' + ua3.Browser);
+console.log('Ua 3: ' + ua3.browser);
 
 
 var ua4 = Ua.parse('"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.162 Safari/535.19');
-console.log('Ua 4: ' + ua4.Browser);
+console.log('Ua 4: ' + ua4.browser);
 
 console.log('Ua 1 is Safari? ' + ua1.isSafari);
 console.log('Ua 2 is Safari? ' + ua2.isSafari);

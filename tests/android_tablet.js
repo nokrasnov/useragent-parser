@@ -5,7 +5,7 @@
  * Based on the above post to detect the Android tablet.
 **/
 
-var ua = require('../lib/express-useragent');
+var ua = require('../src/useragent-parser');
 
 exports['Andriod Tablet'] = function(test) {
 
@@ -44,11 +44,11 @@ exports['Andriod Tablet'] = function(test) {
     test.ok(!userAgent.isBot, 'Bot');
     test.ok(userAgent.isAndroidTablet, 'AndroidTablet');
 
-    test.equal(userAgent.Browser, 'Safari');
+    test.equal(userAgent.browser, 'Safari');
     test.equal(userAgent.OS, 'Linux');
-    test.equal(userAgent.Platform, 'Android');
-    test.equal(0, Object.keys(userAgent.GeoIP).length );
-    test.equal(userAgent.Version, '4.0');
+    test.equal(userAgent.platform, 'Android');
+    test.equal(0, Object.keys(userAgent.geoIP).length );
+    test.equal(userAgent.version, '4.0');
 
     test.done();
 };

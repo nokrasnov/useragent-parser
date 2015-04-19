@@ -1,5 +1,5 @@
 
-var ua = require('../lib/express-useragent');
+var ua = require('../src/useragent-parser');
 
 exports['Macintosh Silk'] = function(test) {
 
@@ -26,9 +26,9 @@ exports['Macintosh Silk'] = function(test) {
     test.ok(!a.isLinux, 'Linux');
     test.ok(a.isMac, 'Mac');
     test.ok(!a.isWindowsPhone, 'Windows Phone');
-    test.equal(a.Version, '5.0');
+    test.equal(a.version, '5.0');
     test.ok(a.isSilk, 'Silk');
-    test.ok(a.SilkAccelerated, true);
+    test.ok(a.silkAccelerated, true);
 
     test.done();
 };
@@ -58,9 +58,9 @@ exports['Android Silk'] = function(test) {
     test.ok(a.isLinux, 'Linux');
     test.ok(!a.isMac, 'Mac');
     test.ok(!a.isWindowsPhone, 'Windows Phone');
-    test.equal(a.Version, '4.0');
+    test.equal(a.version, '4.0');
     test.ok(a.isSilk, 'Silk');
-    test.ok(a.SilkAccelerated, true);
+    test.ok(a.silkAccelerated, true);
 
     test.done();
 };
@@ -90,9 +90,9 @@ exports['Kindle Fire HDX 7 Tablet'] = function(test) {
     test.ok(a.isLinux, 'Linux');
     test.ok(!a.isMac, 'Mac');
     test.ok(!a.isWindowsPhone, 'Windows Phone');
-    test.equal(a.Version, '34.0.1847.137');
+    test.equal(a.version, '34.0.1847.137');
     test.ok(a.isSilk, 'Silk');
-    test.ok(!a.SilkAccelerated, true);
+    test.ok(!a.silkAccelerated, true);
 
     test.done();
 };
@@ -122,9 +122,9 @@ exports['Kindle Fire Desktop'] = function(test) {
     test.ok(a.isLinux, 'Linux');
     test.ok(!a.isMac, 'Mac');
     test.ok(!a.isWindowsPhone, 'Windows Phone');
-    test.equal(a.Version, '34.0.1847.137');
+    test.equal(a.version, '34.0.1847.137');
     test.ok(a.isSilk, 'Silk');
-    test.ok(!a.SilkAccelerated, true);
+    test.ok(!a.silkAccelerated, true);
 
     test.done();
 };
@@ -154,9 +154,9 @@ exports['Kindle Fire HDX 7 Mobile'] = function(test) {
     test.ok(a.isLinux, 'Linux');
     test.ok(!a.isMac, 'Mac');
     test.ok(!a.isWindowsPhone, 'Windows Phone');
-    test.equal(a.Version, '34.0.1847.138');
+    test.equal(a.version, '34.0.1847.138');
     test.ok(a.isSilk, 'Silk');
-    test.ok(!a.SilkAccelerated, true);
+    test.ok(!a.silkAccelerated, true);
 
     test.done();
 };

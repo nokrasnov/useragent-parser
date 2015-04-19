@@ -3,7 +3,9 @@
   "main": "src/useragent.js",
   "version": "1.0.0",
   "homepage": "https://github.com/nokrasnov/useragent-parser",
-  "author": "Nikita Krasnov <nokrasnov@gmail.com> (https://github.com/nokrasnov)",
+  "authors": [
+    "Nikita Krasnov <nokrasnov@gmail.com> (https://github.com/nokrasnov)"
+  ],
   "description": "JavaScript-based user-agent string parser",
   "keywords": [
     "javascript",
@@ -25,14 +27,5 @@
   "devDependencies": {
     "nodeunit": "^0.9.1",
     "uglifyjs": "^2.4.10"
-  },
-  "directories": {
-    "dist": "dist",
-    "src": "src",
-    "test": "test"
-  },
-  "scripts": {
-    "test": "nodeunit tests",
-    "build": "uglifyjs src/useragent-parser.js --comments -o=dist/useragent-parser.min.js"
   }
 }
