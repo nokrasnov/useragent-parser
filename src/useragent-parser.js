@@ -1,7 +1,7 @@
 /**
  * useragent-parser
  * JavaScript-based user-agent string parser
- * @version 1.0.0
+ * @version 1.0.1
  * @author nokrasnov <nokrasnov@gmail.com>
  * @link https://github.com/nokrasnov/useragent-parser
  * @license MIT
@@ -26,7 +26,7 @@
      */
 
     var UserAgentParser = function () {
-        this.version = '1.0.0';
+        this.version = '1.0.1';
         this._Versions = {
             Firefox: /firefox\/([\d\w\.\-]+)/i,
             IE: /msie\s([\d\.]+[\d])|trident\/\d+\.\d+;.*[rv:]+(\d+\.\d)/i,

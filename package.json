@@ -1,7 +1,7 @@
 {
   "name": "useragent-parser-js",
   "main": "dist/useragent-parser.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/nokrasnov/useragent-parser",
   "author": "Nikita Krasnov <nokrasnov@gmail.com> (https://github.com/nokrasnov)",
   "description": "JavaScript-based user-agent string parser",
