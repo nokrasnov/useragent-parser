@@ -570,7 +570,7 @@
             });
         } else {
             // browser env
-            window.UserAgentParser = new UserAgentParser;
+            window.userAgentParser = new UserAgentParser;
         }
     }
 

@@ -35,7 +35,7 @@ bower install useragent-parser
 ### Simple
 
 ```js
-var parser = UserAgentParser;
+var parser = userAgentParser;
 var result = parser.parse(userAgentString);
 ```
 
