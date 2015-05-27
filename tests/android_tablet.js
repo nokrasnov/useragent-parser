@@ -45,7 +45,7 @@ exports['Andriod Tablet'] = function(test) {
     test.ok(userAgent.isAndroidTablet, 'AndroidTablet');
 
     test.equal(userAgent.browser, 'Safari');
-    test.equal(userAgent.OS, 'Linux');
+    test.equal(userAgent.os, 'Linux');
     test.equal(userAgent.platform, 'Android');
     test.equal(0, Object.keys(userAgent.geoIP).length );
     test.equal(userAgent.version, '4.0');

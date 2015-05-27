@@ -240,7 +240,7 @@ exports['Windows 8 Chrome 28'] = function (test) {
     test.ok(!a.isMac, 'Mac');
     test.ok(!a.isWindowsPhone, 'Windows Phone');
     test.equal(a.version, '28.0.1500.95');
-    test.equal(a.OS, 'Windows 8');
+    test.equal(a.os, 'Windows 8');
 
     test.done();
 };
@@ -271,7 +271,7 @@ exports['Windows 8.1 WinJs'] = function (test) {
     test.ok(!a.isMac, 'Mac');
     test.ok(!a.isWindowsPhone, 'Windows Phone');
     test.equal(a.version, '2.0');
-    test.equal(a.OS, 'Windows 8.1');
+    test.equal(a.os, 'Windows 8.1');
 
     test.done();
 };
@@ -301,7 +301,7 @@ exports['Windows 7 Firefox 23'] = function (test) {
     test.ok(!a.isMac, 'Mac');
     test.ok(!a.isWindowsPhone, 'Windows Phone');
     test.equal(a.version, '23.0');
-    test.equal(a.OS, 'Windows 7');
+    test.equal(a.os, 'Windows 7');
 
     test.done();
 };

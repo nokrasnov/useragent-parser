@@ -1,7 +1,7 @@
 /**
  * useragent-parser
  * JavaScript-based user-agent string parser
- * @version 1.0.1
+ * @version 1.0.2
  * @author nokrasnov <nokrasnov@gmail.com>
  * @link https://github.com/nokrasnov/useragent-parser
  * @license MIT
@@ -17,7 +17,6 @@
      * @created     2011-12-10 17:19:10
      * @category    Express Helpers
      * @package     express-useragent
-     * @version     0.1.6
      * @copyright   Copyright (c) 2009-2011 - All rights reserved.
      * @license     MIT License
      * @author      Alexey Gordeyev IK <aleksej@gordejev.lv>
@@ -139,7 +138,7 @@
             silkAccelerated: false,
             browser: 'unknown',
             version: 'unknown',
-            OS: 'unknown',
+            os: 'unknown',
             platform: 'unknown',
             geoIP: {},
             source: ''
@@ -523,7 +522,7 @@
 
         this.testBot = function testBot() {
             var ua = this;
-            if (/googlebot|baiduspider|gurujibot|yandexbot|slurp|msnbot|bingbot|facebookexternalhit|linkedinbot|twitterbot|slackbot/i.test(ua.agent.source)) {
+            if (/googlebot|baiduspider|gurujibot|yandexbot|slurp|msnbot|bingbot|facebookexternalhit|linkedinbot|twitterbot|slackbot|telegrambot|applebot/i.test(ua.agent.source)) {
                 ua.agent.isBot = true;
             }
         };
@@ -538,7 +537,7 @@
         this.parse = function parse(source) {
             var ua = new UserAgentParser();
             ua.agent.source = source.replace(/^\s*/, '').replace(/\s*$/, '');
-            ua.agent.OS = ua.getOS(ua.agent.source);
+            ua.agent.os = ua.getOS(ua.agent.source);
             ua.agent.platform = ua.getPlatform(ua.agent.source);
             ua.agent.browser = ua.getBrowser(ua.agent.source);
             ua.agent.version = ua.getBrowserVersion(ua.agent.source);
