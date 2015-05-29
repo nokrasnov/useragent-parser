@@ -28,7 +28,7 @@ var ua3 = Ua.parse('Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.16) Gecko/2
 console.log('Ua 3: ' + ua3.browser);
 
 
-var ua4 = Ua.parse('"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.162 Safari/535.19');
+var ua4 = Ua.parse('Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.162 Safari/535.19');
 console.log('Ua 4: ' + ua4.browser);
 
 console.log('Ua 1 is Safari? ' + ua1.isSafari);

@@ -1,7 +1,7 @@
 /**
  * useragent-parser
  * JavaScript-based user-agent string parser
- * @version 1.0.2
+ * @version 1.0.3
  * @author nokrasnov <nokrasnov@gmail.com>
  * @link https://github.com/nokrasnov/useragent-parser
  * @license MIT
@@ -25,7 +25,7 @@
      */
 
     var UserAgentParser = function () {
-        this.version = '1.0.1';
+        this.version = '1.0.3';
         this._Versions = {
             Firefox: /firefox\/([\d\w\.\-]+)/i,
             IE: /msie\s([\d\.]+[\d])|trident\/\d+\.\d+;.*[rv:]+(\d+\.\d)/i,
@@ -72,6 +72,8 @@
             WindowsPhone8: /windows phone 8\./,
             OSX: /os x (\d+)[._](\d+)/i,
             Mac: /os x/i,
+            iOS: /CFNetwork\/(\d+)\.(\d+)\.(\d+)/i,
+            Darwin: /Darwin\/(\d+)\.(\d+)\.(\d+)/i,
             Linux: /linux/i,
             Linux64: /linux x86_64/i,
             ChromeOS: /cros/i,
@@ -324,6 +326,12 @@
                 case this._OS.OSX.test(string):
                     this.agent.isMac = true;
                     return string.match(this._OS.OSX)[0].replace('_', '.');
+                case this._OS.iOS.test(string):
+                    this.agent.isMobile = true;
+                    return 'iOS';
+                case this._OS.Darwin.test(string):
+                    this.agent.isMac = true;
+                    return 'OS X';
                 case this._OS.iPad.test(string):
                     this.agent.isiPad = true;
                     return string.match(this._OS.iPad)[0].replace('_', '.');
